@@ -1,4 +1,4 @@
-in# Hjernevekker
+# Hjernevekker
 
 This is an alarm clock app I developed as a part of a school project when I was 15 years old. In addition to working like a normal alarm clock, it gives you challenges you have to solve to turn off the alarm. It will do it's utmost to wake you up, for instance spamming you with notifications if you decide to quit the app. It will also give you some nice features, like fetching weather from your iPhone's current location. 
 
