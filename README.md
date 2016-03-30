@@ -6,3 +6,4 @@ The project involves over 3000 lines of code written in Objective-C. I do have t
 
 Despite all this, it lead to a satisfying result. A fully functioning app that works like a charm. Below are some screenshots.
 
+![alt tag](https://raw.githubusercontent.com/EspenNaess/Hjernevekker/master/Hjernevekker/Screenshots/Skjermbilde%202016-03-20%20kl.%2020.28.29.png)
