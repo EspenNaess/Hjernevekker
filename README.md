@@ -7,3 +7,8 @@ The project involves over 3000 lines of code written in Objective-C. I do have t
 Despite all this, it lead to a satisfying result. A fully functioning app that works like a charm. Below are some screenshots.
 
 ![alt tag](https://raw.githubusercontent.com/EspenNaess/Hjernevekker/master/Hjernevekker/Screenshots/Skjermbilde%202016-03-20%20kl.%2020.28.29.png)
+![alt tag](https://raw.githubusercontent.com/EspenNaess/Hjernevekker/master/Hjernevekker/Screenshots/Skjermbilde%202016-03-20%20kl.%2020.30.43.png)
+![alt tag](https://raw.githubusercontent.com/EspenNaess/Hjernevekker/master/Hjernevekker/Screenshots/Skjermbilde%202016-03-20%20kl.%2020.32.00.png)
+![alt tag](https://raw.githubusercontent.com/EspenNaess/Hjernevekker/master/Hjernevekker/Screenshots/Skjermbilde%202016-03-20%20kl.%2020.32.41.png)
+![alt tag](https://raw.githubusercontent.com/EspenNaess/Hjernevekker/master/Hjernevekker/Screenshots/Skjermbilde%202016-03-20%20kl.%2020.33.05.png)
+![alt tag](https://github.com/EspenNaess/Hjernevekker/blob/master/Hjernevekker/Screenshots/Skjermbilde%202016-03-20%20kl.%2020.35.04.png)
