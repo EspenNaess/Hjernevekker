@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Informasjon-->
+        <scene sceneID="M4G-ef-PcN">
+            <objects>
+                <viewController storyboardIdentifier="Informasjon" id="SlH-1Q-haH" customClass="Informasjon" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x7N-I9-2qD"/>
+                        <viewControllerLayoutGuide type="bottom" id="7q4-CO-nZf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6EO-pe-7PG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jc-XM-9Gn">
+                                <rect key="frame" x="10" y="518" width="46" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="❌">
+                                    <color key="titleColor" red="0.92549026010000002" green="0.062745101750000004" blue="0.043137256059999997" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hqJ-GN-cFK" kind="unwind" unwindAction="tilbake:" id="CXu-85-r2e"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jVS-NR-c6d">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2XS-K8-Gj1">
+                                <rect key="frame" x="52" y="115" width="216" height="184"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <string key="text">Applikasjonen er utviklet av elever fra Kongshavn videregående skole i Oslo som del av et skoleprosjekt i faget entreprenørskap hvor vi skal realisere, markedsføre og selge et produkt. Kongshavn er en pionerskole innenfor gründervirksomhet. Vil du vite mer?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fbn-aZ-hri">
+                                <rect key="frame" x="75" y="28" width="171" height="29"/>
+                                <segments>
+                                    <segment title="Informasjon"/>
+                                    <segment title="Hjelp"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Informasjon om applikasjonen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8H-Sg-fZ0">
+                                <rect key="frame" x="42" y="88" width="237" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ønsker du å kontakte oss?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQw-Yh-jQn">
+                                <rect key="frame" x="42" y="310" width="237" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Om du av ulike grunner ønsker å kontakte oss vedrørende applikasjonen kan du kontakte oss på mail:" translatesAutoresizingMaskIntoConstraints="NO" id="EVE-kW-EQR">
+                                <rect key="frame" x="52" y="330" width="217" height="83"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Espen2308@osloskoler.no" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olK-BD-rzx">
+                                <rect key="frame" x="60" y="416" width="201" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9h1-PW-fvO">
+                                <rect key="frame" x="93" y="269" width="60" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Klikk her">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="KlikkeHer" destination="9h1-PW-fvO" id="dGW-XL-NTs"/>
+                        <outlet property="Tabbar" destination="fbn-aZ-hri" id="OKd-p1-K2Q"/>
+                        <outlet property="Tekstboks1" destination="2XS-K8-Gj1" id="G0e-fy-zBA"/>
+                        <outlet property="Tekstboks2" destination="EVE-kW-EQR" id="ZUL-h1-JwZ"/>
+                        <outlet property="label1" destination="d8H-Sg-fZ0" id="6zp-Og-K2b"/>
+                        <outlet property="label2" destination="kQw-Yh-jQn" id="lHI-Jk-EUd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KlU-La-9CS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hqJ-GN-cFK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-343" y="81"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="Startskjerm" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RrY-IS-3d5"/>
+                        <viewControllerLayoutGuide type="bottom" id="qb1-4p-Pq1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwj-68-taL">
+                                <rect key="frame" x="35" y="100" width="250" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKk-tN-cFf">
+                                <rect key="frame" x="14" y="518" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="🔔">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="j3R-Q1-jbu" kind="modal" identifier="alarmer" modalTransitionStyle="coverVertical" id="GrY-w6-NgI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WH-5r-5rW">
+                                <rect key="frame" x="285" y="521" width="22" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SlH-1Q-haH" kind="modal" id="WVE-kv-0FJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ukedag" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDm-0v-1xZ">
+                                <rect key="frame" x="45" y="177" width="100" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dato" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhI-Af-w2v">
+                                <rect key="frame" x="175" y="177" width="100" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoO-Eg-F2O">
+                                <rect key="frame" x="54" y="24" width="123" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="klokke" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykj-0y-0d4">
+                                <rect key="frame" x="35" y="100" width="250" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ir1-wm-igc">
+                                <rect key="frame" x="54" y="517" width="213" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Laget av UB fra Kongshavn VGS">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="TekstKlikk:" destination="vXZ-lx-hvc" eventType="touchDown" id="eBu-b5-fqt"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kef-XG-LaZ">
+                                <rect key="frame" x="14" y="16" width="30" height="26"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssb-sM-QCL">
+                                <rect key="frame" x="281" y="20" width="26" height="27"/>
+                                <state key="normal" image="SETTINGS.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eaH-Xj-1Fe" kind="modal" id="kNo-N6-gTp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="Dag" destination="qDm-0v-1xZ" id="Gpp-2S-HUS"/>
+                        <outlet property="Dato" destination="hhI-Af-w2v" id="DdA-fL-xHO"/>
+                        <outlet property="KlokkeLabel" destination="ykj-0y-0d4" id="gUB-f6-Wdf"/>
+                        <outlet property="VaerLabel" destination="hoO-Eg-F2O" id="bvS-X5-ycq"/>
+                        <outlet property="VerTegn" destination="Kef-XG-LaZ" id="10F-XY-Rhi"/>
+                        <outlet property="bakgrunn" destination="Zwj-68-taL" id="ezE-yO-a7C"/>
+                        <segue destination="8Jc-NX-509" kind="modal" identifier="Matte1" id="DOl-w3-xpC"/>
+                        <segue destination="p7s-aI-VUF" kind="modal" identifier="Matte2" id="06U-fh-a9J"/>
+                        <segue destination="TgZ-LS-JKU" kind="modal" identifier="veret" id="MNb-7T-dXw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885" y="81"/>
+        </scene>
+        <!--Instillinger-->
+        <scene sceneID="6lq-pb-k8e">
+            <objects>
+                <viewController storyboardIdentifier="Innstillinger" id="eaH-Xj-1Fe" customClass="Instillinger" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SfX-iP-lFE"/>
+                        <viewControllerLayoutGuide type="bottom" id="tNZ-Z2-01o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UHh-Fe-7kH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="6f9-cr-o0K">
+                                <rect key="frame" x="0.0" y="64" width="325" height="504"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="eaH-Xj-1Fe" id="VFA-fE-1fR"/>
+                                    <outlet property="delegate" destination="eaH-Xj-1Fe" id="BH8-Q5-yal"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HpM-Kw-k8j">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Innstillinger" id="ee2-Zo-eNz">
+                                        <barButtonItem key="leftBarButtonItem" title="Tilbake" id="fbw-Z0-mUT">
+                                            <connections>
+                                                <segue destination="e0k-CS-jMD" kind="unwind" unwindAction="tilbake:" id="7tK-bh-UCP"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4eq-s3-Xu2">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <connections>
+                                    <outlet property="delegate" destination="eaH-Xj-1Fe" id="uyH-kb-gcW"/>
+                                </connections>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="dfT-xa-EOt" kind="modal" identifier="fargetema" id="boY-I3-Ogh"/>
+                        <segue destination="QXT-fr-f59" kind="modal" identifier="vekking" id="OaY-Zf-gbC"/>
+                        <segue destination="4m8-fx-Ewh" kind="modal" identifier="lommelykt" id="uOI-pr-tSI"/>
+                        <segue destination="TgZ-LS-JKU" kind="modal" identifier="veret" id="2Qb-9V-d8J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXU-Gj-fUt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="e0k-CS-jMD" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1407" y="51"/>
+        </scene>
+        <!--Lommelykt Innstillinger-->
+        <scene sceneID="0le-Cv-Di7">
+            <objects>
+                <viewController storyboardIdentifier="Lommelykt" id="4m8-fx-Ewh" customClass="LommelyktInnstillinger" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wX3-YU-ulj"/>
+                        <viewControllerLayoutGuide type="bottom" id="lFy-we-erU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A8N-B2-cyj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="gkU-4L-mof">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="4m8-fx-Ewh" id="o9d-67-pdQ"/>
+                                    <outlet property="delegate" destination="4m8-fx-Ewh" id="WaB-yI-4MU"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KgH-pE-25X">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Lommelykt" id="SLJ-6C-wJj">
+                                        <barButtonItem key="leftBarButtonItem" title="Tilbake" id="HWn-ty-iQ1">
+                                            <connections>
+                                                <segue destination="jlc-e1-46X" kind="unwind" unwindAction="innstillingerValgt:" id="65Y-KP-CRf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRk-Zh-iPx">
+                                <rect key="frame" x="0.0" y="520" width="320" height="50"/>
+                                <connections>
+                                    <outlet property="delegate" destination="4m8-fx-Ewh" id="GqU-MK-huP"/>
+                                </connections>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0nS-58-1aW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="jlc-e1-46X" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1807" y="-343"/>
+        </scene>
+        <!--Verinnstillinger-->
+        <scene sceneID="fzM-TX-SJs">
+            <objects>
+                <viewController id="TgZ-LS-JKU" customClass="Verinnstillinger" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iNl-2C-N4f"/>
+                        <viewControllerLayoutGuide type="bottom" id="KeY-95-RTe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fBu-5s-Pyu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="aSD-6Q-hch">
+                                <rect key="frame" x="0.0" y="64" width="320" height="472"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="TgZ-LS-JKU" id="gm3-Pe-7sb"/>
+                                    <outlet property="delegate" destination="TgZ-LS-JKU" id="maF-Ju-4GT"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nPj-cW-vHo">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Værinnstillinger" id="Btq-0F-aWE">
+                                        <barButtonItem key="leftBarButtonItem" title="Tilbake" id="7yW-kO-HXg">
+                                            <connections>
+                                                <action selector="Tilbake:" destination="TgZ-LS-JKU" id="bg6-yf-Zas"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcF-c2-TQM">
+                                <rect key="frame" x="2" y="538" width="318" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Værvarsel fra yr.no, levert av Meteorologisk institutt og NRK">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1DF-Gu-1tW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2226" y="-343"/>
+        </scene>
+        <!--Farge Tema-->
+        <scene sceneID="Nr8-4c-xnh">
+            <objects>
+                <viewController storyboardIdentifier="Fargetema" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dfT-xa-EOt" customClass="FargeTema" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rxq-Hn-Q4o"/>
+                        <viewControllerLayoutGuide type="bottom" id="jI9-2T-3Vr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gGY-1A-vwK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yoY-MG-Q9z">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Temaer" id="lfT-C8-kja">
+                                        <barButtonItem key="leftBarButtonItem" title="Tilbake" id="7Kg-Cr-A6s">
+                                            <connections>
+                                                <segue destination="OXL-sh-ReB" kind="unwind" unwindAction="innstillingerValgt:" id="rkd-PC-EkE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="t7J-VJ-OyT">
+                                <rect key="frame" x="0.0" y="64" width="320" height="453"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="dfT-xa-EOt" id="Y4g-kI-zaO"/>
+                                    <outlet property="delegate" destination="dfT-xa-EOt" id="EZh-NO-IpZ"/>
+                                </connections>
+                            </tableView>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b0j-ql-BPA">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <connections>
+                                    <outlet property="delegate" destination="dfT-xa-EOt" id="b0K-Vx-xuS"/>
+                                </connections>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7F-RH-Uan" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="OXL-sh-ReB" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1807" y="337"/>
+        </scene>
+        <!--Vekkefunksjoner-->
+        <scene sceneID="E3z-Wc-nkB">
+            <objects>
+                <viewController storyboardIdentifier="Vekkefunksjoner" id="QXT-fr-f59" customClass="Vekkefunksjoner" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8f5-yC-TlV"/>
+                        <viewControllerLayoutGuide type="bottom" id="0wg-uc-6ol"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AFS-VC-7TA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wr8-Dd-cYX">
+                                <rect key="frame" x="0.0" y="18" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Vekkefunksjoner" id="DeP-Wt-gbU"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="H9Q-pu-AR1">
+                                <rect key="frame" x="0.0" y="62" width="320" height="458"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="QXT-fr-f59" id="rDT-B5-POK"/>
+                                    <outlet property="delegate" destination="QXT-fr-f59" id="dRk-kh-uco"/>
+                                </connections>
+                            </tableView>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uq6-9C-Z3X">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <connections>
+                                    <outlet property="delegate" destination="QXT-fr-f59" id="Fvo-9x-rAP"/>
+                                </connections>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="InnstillingerFerdig" modalTransitionStyle="crossDissolve" id="cRn-Ip-LWs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JLn-z9-30x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2226" y="337"/>
+        </scene>
+        <!--Alarmer-->
+        <scene sceneID="EAN-kr-Rd8">
+            <objects>
+                <viewController storyboardIdentifier="Alarmer" id="j3R-Q1-jbu" customClass="Alarmer" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YVu-Wk-VGa"/>
+                        <viewControllerLayoutGuide type="bottom" id="VSs-CD-UUq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vLP-hL-Vqq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="lUj-pe-Igb">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="j3R-Q1-jbu" id="pVi-Yd-kJf"/>
+                                    <outlet property="delegate" destination="j3R-Q1-jbu" id="IZZ-uu-lUk"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6VH-U3-cqQ">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Alarmer" id="Fbh-44-7j9">
+                                        <barButtonItem key="leftBarButtonItem" title="Tilbake" id="qA2-Aq-Uja">
+                                            <connections>
+                                                <segue destination="rM5-IG-Etj" kind="unwind" unwindAction="tilbake:" id="BWM-O1-2yK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="S9m-Ya-C6q">
+                                            <connections>
+                                                <segue destination="mdl-Ts-U4w" kind="modal" identifier="ny" id="hYH-Mn-psW"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vqC-kb-emE">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <connections>
+                                    <outlet property="delegate" destination="j3R-Q1-jbu" id="zLW-g5-4Vl"/>
+                                </connections>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="Tabell" destination="lUj-pe-Igb" id="qvh-h3-9z9"/>
+                        <segue destination="mdl-Ts-U4w" kind="modal" identifier="endre" id="rqc-us-bAN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cbg-h3-XNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rM5-IG-Etj" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="81"/>
+        </scene>
+        <!--Velkommen-->
+        <scene sceneID="YXr-Hu-Oje">
+            <objects>
+                <viewController storyboardIdentifier="Velkommen" id="m7w-6O-HfO" customClass="Velkommen" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xc3-KW-j5l"/>
+                        <viewControllerLayoutGuide type="bottom" id="N3f-je-dM3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X6V-co-E0F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ForsteOppstartR4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QhT-h9-rIy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="bC4-2u-eGr">
+                                <rect key="frame" x="35" y="505" width="250" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.98517823473937249" blue="0.56380007041503766" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Fortsett">
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Fortsett:" destination="m7w-6O-HfO" eventType="touchUpInside" id="6Au-wP-Hyi"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rCw-rj-2bl">
+                                <rect key="frame" x="30" y="341" width="260" height="151"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <string key="text">Før du tar i bruk alarmklokken vil vi gjerne ha litt informasjon om dine mattekunnskaper, så vi vet hva slags utfordringer vi skal vekke deg med. Denne informasjonen blir ikke lagret noe annet sted enn på din telefon, og vil overhodet ikke tas direkte i bruk i kommersielle sammenhenger.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="Fortsett" destination="bC4-2u-eGr" id="wyd-dT-QzG"/>
+                        <outlet property="tekstInfo" destination="rCw-rj-2bl" id="6Ql-1M-9ec"/>
+                        <segue destination="QXT-fr-f59" kind="modal" identifier="Velkommen" modalTransitionStyle="crossDissolve" id="wVh-6d-byd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vv1-m3-tyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885" y="-606"/>
+        </scene>
+        <!--Opprett Alarm-->
+        <scene sceneID="1cI-jR-1kh">
+            <objects>
+                <viewController storyboardIdentifier="OpprettAlarm" id="mdl-Ts-U4w" customClass="OpprettAlarm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lFU-IV-Y1l"/>
+                        <viewControllerLayoutGuide type="bottom" id="NJ7-i2-kfG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Rb-ff-XES">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zrD-Kz-wIx">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Ny alarm" id="ZUf-it-HhN">
+                                        <barButtonItem key="leftBarButtonItem" title="Avbryt" id="Pl4-pk-vhc">
+                                            <connections>
+                                                <segue destination="JN2-eE-RAH" kind="unwind" unwindAction="avbryt:" id="e7B-cY-NeI"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Ferdig" id="fSM-I0-2di">
+                                            <connections>
+                                                <segue destination="JN2-eE-RAH" kind="unwind" unwindAction="ferdig:" id="y1w-xz-LoJ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qbh-8u-VKt">
+                                <rect key="frame" x="0.0" y="311" width="320" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="404580003.988325">
+                                    <!--2013-10-27 15:20:03 +0000-->
+                                </date>
+                            </datePicker>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGj-2c-PIg">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <connections>
+                                    <outlet property="delegate" destination="mdl-Ts-U4w" id="IxD-hw-mGy"/>
+                                </connections>
+                            </adBannerView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="uaB-H0-HzA">
+                                <rect key="frame" x="0.0" y="64" width="320" height="176"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mdl-Ts-U4w" id="ZQw-QM-etH"/>
+                                    <outlet property="delegate" destination="mdl-Ts-U4w" id="RTT-Fb-yDA"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="Meny" destination="uaB-H0-HzA" id="e1F-TZ-ThH"/>
+                        <outlet property="Navigasjonsbar" destination="zrD-Kz-wIx" id="Q2m-xS-yIf"/>
+                        <outlet property="VelgDato" destination="Qbh-8u-VKt" id="zx3-D8-19F"/>
+                        <segue destination="Nbj-rd-TCw" kind="modal" identifier="musikk" id="Emh-oS-vS1"/>
+                        <segue destination="rlv-ud-iTg" kind="modal" identifier="repetisjoner" id="Ju6-tt-5ha"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0jN-08-LCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="JN2-eE-RAH" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="383" y="81"/>
+        </scene>
+        <!--Repetisjoner-->
+        <scene sceneID="uRn-M1-1Nb">
+            <objects>
+                <viewController storyboardIdentifier="Repetisjoner" id="rlv-ud-iTg" customClass="Repetisjoner" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6dj-nO-4LP"/>
+                        <viewControllerLayoutGuide type="bottom" id="b6t-a3-DnT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8dw-Vb-Xve">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2zO-e7-9vn">
+                                <rect key="frame" x="0.0" y="66" width="320" height="455"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="rlv-ud-iTg" id="gKx-UI-qM1"/>
+                                    <outlet property="delegate" destination="rlv-ud-iTg" id="fly-a8-GQ9"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OrC-Kp-pRu">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Repetisjoner" id="Tgi-Z0-HS9">
+                                        <barButtonItem key="leftBarButtonItem" title="Tilbake" id="Ban-kw-QCs">
+                                            <connections>
+                                                <segue destination="fVI-t6-3BG" kind="unwind" unwindAction="repetisjonerFerdig:" id="zbk-G6-mu5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KtJ-F9-JQI">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <connections>
+                                    <outlet property="delegate" destination="rlv-ud-iTg" id="FQq-Zy-2gU"/>
+                                </connections>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gwi-gO-VUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fVI-t6-3BG" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-305" y="753"/>
+        </scene>
+        <!--Musikk Valg-->
+        <scene sceneID="svg-NJ-Z8x">
+            <objects>
+                <viewController storyboardIdentifier="MusikkValgt" id="Nbj-rd-TCw" customClass="MusikkValg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kda-Bf-n9o"/>
+                        <viewControllerLayoutGuide type="bottom" id="rKo-h3-xD5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GOK-LF-7EK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="epw-j9-n85">
+                                <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Nbj-rd-TCw" id="at0-Xg-b3z"/>
+                                    <outlet property="delegate" destination="Nbj-rd-TCw" id="LCF-vj-Amq"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ynw-oA-slb">
+                                <rect key="frame" x="0.0" y="21" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Musikk" id="vaK-lP-ysr">
+                                        <barButtonItem key="leftBarButtonItem" title="Tilbake" id="3pz-6B-eez">
+                                            <connections>
+                                                <segue destination="oqQ-H9-ucc" kind="unwind" unwindAction="musikkFerdig:" id="T4n-K9-Y21"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tpw-N9-9qY">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Nbj-rd-TCw" id="1bd-rA-C6N"/>
+                                </connections>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RxI-VJ-cfD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="oqQ-H9-ucc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="753"/>
+        </scene>
+        <!--Vanskelig Matte-->
+        <scene sceneID="lEf-MP-2oR">
+            <objects>
+                <viewController storyboardIdentifier="VanskeligMatte" id="p7s-aI-VUF" customClass="VanskeligMatte" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dA0-9y-zO6"/>
+                        <viewControllerLayoutGuide type="bottom" id="cmF-te-ffZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zT1-6n-SsI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Løsning" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D3F-ge-Cvm">
+                                <rect key="frame" x="20" y="269" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oppgave" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2t-9E-55C">
+                                <rect key="frame" x="20" y="240" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dagens oppgave:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0U-v8-9nO">
+                                <rect key="frame" x="20" y="211" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="God Morgen!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oun-Ay-tMJ">
+                                <rect key="frame" x="26" y="68" width="268" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOf-VQ-tZU">
+                                <rect key="frame" x="26" y="100" width="268" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="● Fysisk oppgave" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2b1-E3-qul">
+                                <rect key="frame" x="20" y="342" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="● Løs matteoppgave" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHA-xt-Eeg">
+                                <rect key="frame" x="20" y="313" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="Klokke" destination="TOf-VQ-tZU" id="ij7-2A-4Oz"/>
+                        <outlet property="Navn" destination="oun-Ay-tMJ" id="wvP-Ks-I3n"/>
+                        <outlet property="Spurnad" destination="Q2t-9E-55C" id="vfT-wV-86t"/>
+                        <outlet property="StatusTittel" destination="q0U-v8-9nO" id="ZQn-D8-LKg"/>
+                        <outlet property="SvarTekstFelt" destination="D3F-ge-Cvm" id="bYA-KB-XwE"/>
+                        <outlet property="TaskFysisk" destination="2b1-E3-qul" id="l0P-2u-Msg"/>
+                        <outlet property="TaskMatte" destination="qHA-xt-Eeg" id="Vaa-tB-eAn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Bt-9z-0Rn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="761"/>
+        </scene>
+        <!--Enkel Matte-->
+        <scene sceneID="nrH-0u-hi9">
+            <objects>
+                <viewController storyboardIdentifier="EnkelMatte" id="8Jc-NX-509" customClass="EnkelMatte" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5zn-LA-Vda"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gom-5y-yQ7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3nP-GW-olk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3f-O5-8fJ">
+                                <rect key="frame" x="93" y="316" width="135" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="6x + 4y" backgroundImage="gray-button-rectangle-hi.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="KnappKlikket:" destination="8Jc-NX-509" eventType="touchDown" id="vI3-dl-seE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dagens oppgave:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szf-k7-WiW">
+                                <rect key="frame" x="20" y="247" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spørsmål" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96Z-pX-XtQ">
+                                <rect key="frame" x="20" y="276" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jh-Hj-hgy">
+                                <rect key="frame" x="93" y="359" width="135" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="4x + 6y" backgroundImage="gray-button-rectangle-hi.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="KnappKlikket:" destination="8Jc-NX-509" eventType="touchDown" id="8zJ-wa-H97"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSx-l9-X6w">
+                                <rect key="frame" x="93" y="401" width="135" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="3x + 4y" backgroundImage="gray-button-rectangle-hi.png">
+                                    <color key="titleColor" red="0.023529414089999999" green="0.0039215688589999999" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="KnappKlikket:" destination="8Jc-NX-509" eventType="touchDown" id="MG9-eI-2YS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzS-TL-Qke">
+                                <rect key="frame" x="93" y="444" width="135" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="4x + 6y" backgroundImage="gray-button-rectangle-hi.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="KnappKlikket:" destination="8Jc-NX-509" eventType="touchDown" id="fEX-hI-kba"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sO-6n-0LO">
+                                <rect key="frame" x="20" y="94" width="280" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="God Morgen!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cy-gD-7EX">
+                                <rect key="frame" x="20" y="63" width="280" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="● Matteoppgave løst ☑" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAA-VO-Nfb">
+                                <rect key="frame" x="20" y="316" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="● Fysisk oppgave" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yt4-BP-cek">
+                                <rect key="frame" x="20" y="349" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="Alternativ1" destination="T3f-O5-8fJ" id="a9Y-Oc-pMk"/>
+                        <outlet property="Alternativ2" destination="5jh-Hj-hgy" id="ZwB-uk-OKY"/>
+                        <outlet property="Alternativ3" destination="oSx-l9-X6w" id="0XM-G0-2BA"/>
+                        <outlet property="Alternativ4" destination="BzS-TL-Qke" id="GAN-q4-tB0"/>
+                        <outlet property="Klokke" destination="5sO-6n-0LO" id="eJ8-2H-rhS"/>
+                        <outlet property="Navn" destination="8cy-gD-7EX" id="q1v-AP-IL6"/>
+                        <outlet property="Spurnad" destination="96Z-pX-XtQ" id="cV7-Wb-vm4"/>
+                        <outlet property="Status" destination="Szf-k7-WiW" id="QIz-rX-UMf"/>
+                        <outlet property="TaskFysisk" destination="Yt4-BP-cek" id="Xnr-Dg-iqX"/>
+                        <outlet property="TaskTeoretisk" destination="PAA-VO-Nfb" id="ilc-Rg-aNQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J83-Vf-Kf0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866" y="761"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ForsteOppstartR4.jpg" width="640" height="1136"/>
+        <image name="SETTINGS.png" width="25" height="25"/>
+        <image name="gray-button-rectangle-hi.png" width="235" height="121"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="OaY-Zf-gbC"/>
+        <segue reference="MNb-7T-dXw"/>
+        <segue reference="hYH-Mn-psW"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="Alarm" representedClassName="Alarm" syncable="YES">
+        <attribute name="alarmstatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gjentagelser" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="musikkvalg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="navn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tidAlarm" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Alarm" positionX="0" positionY="0" width="128" height="120"/>
+    </elements>
+</model>
